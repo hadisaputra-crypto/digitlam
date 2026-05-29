@@ -14,9 +14,9 @@
                         <i class="fas fa-file-upload text-9xl"></i>
                     </div>
                     <div class="relative z-10">
-                        <h3 class="text-2xl font-bold mb-2">Upload Data Jurnal</h3>
+                        <h3 class="text-2xl font-bold mb-2">Upload Data Dokumen Adat</h3>
                         <p class="text-green-100 max-w-xl">
-                            Tambahkan jurnal baru ke dalam sistem. Pastikan data yang dimasukkan akurat dan file PDF valid.
+                            Tambahkan dokumen adat baru ke dalam sistem kito. Pastikan data yang dimasukin akurat dan file PDF-nyo valid.
                         </p>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                                         <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                             <i class="fas fa-heading text-gray-400 group-focus-within:text-lam-green transition-colors"></i>
                                         </div>
-                                        <x-text-input id="title" class="pl-10 block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl transition-all" type="text" name="title" :value="old('title')" required autofocus placeholder="Masukkan judul lengkap jurnal" />
+                                        <x-text-input id="title" class="pl-10 block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl transition-all" type="text" name="title" :value="old('title')" required autofocus placeholder="Masukkan judul lengkap dokumen adat" />
                                     </div>
                                     <x-input-error :messages="$errors->get('title')" class="mt-2" />
                                 </div>
@@ -109,7 +109,7 @@
                                 <div class="group">
                                     <x-input-label for="abstract" :value="__('Abstrak')" class="text-gray-700 font-semibold mb-1" />
                                     <div class="relative">
-                                        <textarea id="abstract" name="abstract" rows="6" class="block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl shadow-sm transition-all p-4" required placeholder="Tuliskan ringkasan atau abstrak jurnal di sini...">{{ old('abstract') }}</textarea>
+                                        <textarea id="abstract" name="abstract" rows="6" class="block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl shadow-sm transition-all p-4" required placeholder="Tuliskan ringkasan atau abstrak dokumen adat di siko...">{{ old('abstract') }}</textarea>
                                         <div class="absolute bottom-3 right-3 text-gray-400 pointer-events-none">
                                             <i class="fas fa-align-left"></i>
                                         </div>
@@ -137,7 +137,7 @@
                                             <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                                                 <i class="fas fa-calendar-alt text-gray-400 group-focus-within:text-lam-green transition-colors"></i>
                                             </div>
-                                            <x-text-input id="publication_date" class="pl-10 block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl transition-all cursor-pointer" type="date" name="publication_date" :value="old('publication_date')" required />
+                                            <x-text-input id="publication_date" class="pl-10 block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl transition-all cursor-pointer" type="date" name="publication_date" :value="old('publication_date', date('Y-m-d'))" required />
                                         </div>
                                         <x-input-error :messages="$errors->get('publication_date')" class="mt-2" />
                                     </div>
@@ -178,7 +178,7 @@
                                     <x-text-input id="document_url" class="pl-10 block mt-1 w-full border-gray-200 focus:border-lam-green focus:ring-lam-green rounded-xl transition-all" type="url" name="document_url" :value="old('document_url')" placeholder="https://drive.google.com/file/d/..." />
                                 </div>
                                 <p class="text-xs text-gray-500 mt-2">
-                                    * Masukkan link akses publik ke file PDF jurnal (Google Drive, S3, Dropbox, dll). Kosongkan jika belum ada.
+                                    * Masukkan link akses publik ke file PDF dokumen adat (Google Drive, S3, Dropbox, dll). Kosongkan jika belum ado.
                                 </p>
                                 <x-input-error :messages="$errors->get('document_url')" class="mt-2" />
                             </div>
@@ -191,7 +191,7 @@
                             </a>
                             
                             <button type="submit" class="inline-flex items-center px-8 py-3 border border-transparent shadow-lg text-sm font-bold rounded-xl text-white bg-gradient-to-r from-lam-green to-green-700 hover:from-green-700 hover:to-red-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-lam-green transform hover:-translate-y-0.5 transition-all duration-200">
-                                <i class="fas fa-save mr-2"></i> Simpan Jurnal
+                                <i class="fas fa-save mr-2"></i> Simpan Dokumen
                             </button>
                         </div>
                     </form>

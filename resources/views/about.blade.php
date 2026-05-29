@@ -3,7 +3,7 @@
     <div class="bg-lam-green text-white py-16">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 class="text-4xl font-bold mb-4">Tentang Kami</h1>
-            <p class="text-xl text-white/90">Lembaga Adat Melayu Jambi</p>
+            <p class="text-xl text-white/90">Lembaga Adat Melayu Kota Jambi</p>
         </div>
     </div>
 
@@ -25,7 +25,7 @@
                         <div>
                             <h3 class="font-bold text-lg text-gray-900 mb-3">Visi</h3>
                             <p class="text-gray-600 leading-relaxed">
-                                Menjadi pusat pelestarian dan pengembangan adat budaya Melayu Jambi yang terkemuka, modern, dan dapat diakses oleh seluruh lapisan masyarakat guna memperkuat jati diri daerah.
+                                Menjadi pusat njago dan ngembangin adat budayo Melayu Jambi yang ternamo, modern, dan biso ditengok oleh segalo kito biar makin kuat jati diri daerah.
                             </p>
                         </div>
                         
@@ -34,15 +34,15 @@
                             <ul class="space-y-3 text-gray-600">
                                 <li class="flex items-start">
                                     <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                                    <span>Mengumpulkan, mendokumentasikan, dan mendigitalkan seluruh warisan budaya Melayu Jambi.</span>
+                                    <span>Ngumpulin, nyatet, dan mendigitalkan segalo warisan budayo Melayu Jambi.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                                    <span>Menyediakan akses mudah dan luas bagi masyarakat, peneliti, dan pelajar terhadap literatur adat.</span>
+                                    <span>Nyiapin jalan yang mudah bagi masyarakat, peneliti, dan budak sekolah untuk nengok surat adat.</span>
                                 </li>
                                 <li class="flex items-start">
                                     <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
-                                    <span>Mengembangkan kajian dan penelitian tentang nilai-nilai luhur adat Melayu Jambi.</span>
+                                    <span>Ngembangin kajian dan penelitian tentang nilai-nilai elok adat Melayu Jambi.</span>
                                 </li>
                             </ul>
                         </div>
@@ -61,10 +61,10 @@
                     <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-8">
                         <div class="prose max-w-none text-gray-600">
                             <p class="mb-4">
-                                Lembaga Adat Melayu (LAM) Jambi didirikan sebagai wadah untuk melestarikan, mengembangkan, dan membina adat istiadat serta budaya Melayu di Provinsi Jambi. Keberadaan lembaga ini sangat strategis dalam menjaga nilai-nilai kearifan lokal di tengah arus modernisasi.
+                                Lembaga Adat Melayu (LAM) Jambi didirikan sebagai wadah pelestarian, pengembangan, dan pembinaan adat istiadat serta budayo Melayu di Provinsi Jambi. Adonyo lembaga ko penting nian untuk njago kearifan lokal di tengah zaman modern.
                             </p>
                             <p>
-                                Digital Library LAM Jambi merupakan inisiatif terbaru untuk menjawab tantangan zaman, di mana akses terhadap informasi perlu dilakukan secara cepat dan digital. Melalui platform ini, kami berharap kekayaan intelektual dan budaya Jambi dapat terjaga dan bermanfaat bagi generasi mendatang.
+                                Serambi Baco LAM Kota Jambi merupakan langkah paling baru untuk njawab tantangan zaman, biar nengok informasi biso dilakukan cepat secara digital. Lewat platform ko, kito berharap kekayaan intelektual dan budayo Jambi tetap terjago dan bermanpaat untuk anak cucu kito.
                             </p>
                         </div>
                     </div>

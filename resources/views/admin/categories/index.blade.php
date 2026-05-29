@@ -18,7 +18,7 @@
                             <i class="fas fa-layer-group"></i> Daftar Kategori
                         </h3>
                         <p class="text-green-100 max-w-xl text-lg">
-                            Kelola kategori jurnal untuk pengelompokan yang lebih baik.
+                            Kelola kategori dokumen adat untuk pengelompokan yang lebih elok.
                         </p>
                     </div>
                     <div>
@@ -56,7 +56,7 @@
                             <thead class="bg-gray-50">
                                 <tr>
                                     <th scope="col" class="px-6 py-4 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">Nama Kategori</th>
-                                    <th scope="col" class="px-6 py-4 text-center text-xs font-bold text-gray-500 uppercase tracking-wider">Jumlah Jurnal</th>
+                                    <th scope="col" class="px-6 py-4 text-center text-xs font-bold text-gray-500 uppercase tracking-wider">Jumlah Dokumen</th>
                                     <th scope="col" class="px-6 py-4 text-center text-xs font-bold text-gray-500 uppercase tracking-wider">Aksi</th>
                                 </tr>
                             </thead>
@@ -69,7 +69,7 @@
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-center">
                                             <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-green-100 text-blue-800">
-                                                <i class="fas fa-book mr-1.5"></i> {{ $category->journals_count ?? 0 }} Jurnal
+                                                <i class="fas fa-book mr-1.5"></i> {{ $category->journals_count ?? 0 }} Dokumen
                                             </span>
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-center text-sm font-medium">

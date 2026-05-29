@@ -27,7 +27,7 @@
                                 <span class="text-sm text-gray-500 ml-2">{{ $journal->year }}</span>
                             </div>
                             <div class="text-right">
-                                <p class="text-sm text-gray-500">Dipublikasikan</p>
+                                <p class="text-sm text-gray-500">Diterbitkan</p>
                                 <p class="text-sm font-medium">{{ $journal->published_at->format('d M Y') }}</p>
                             </div>
                         </div>
@@ -51,7 +51,7 @@
                     <!-- Journal Info -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-semibold text-gray-900 mb-2">Informasi Jurnal</h4>
+                            <h4 class="font-semibold text-gray-900 mb-2">Informasi Surat Adat</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li><strong>Kategori:</strong> {{ $journal->category->name }}</li>
                                 <li><strong>Tahun:</strong> {{ $journal->year }}</li>
@@ -60,20 +60,20 @@
                                         {{ ucfirst($journal->status) }}
                                     </span>
                                 </li>
-                                <li><strong>Diunggah oleh:</strong> {{ $journal->uploader->name }}</li>
-                                <li><strong>Tanggal unggah:</strong> {{ $journal->created_at->format('d M Y H:i') }}</li>
+                                <li><strong>Penulis:</strong> {{ $journal->authors }}</li>
+                                <li><strong>Tanggal diunggah:</strong> {{ $journal->created_at->format('d M Y H:i') }}</li>
                             </ul>
                         </div>
 
                         <div class="bg-gray-50 p-4 rounded-lg">
-                            <h4 class="font-semibold text-gray-900 mb-2">Tautan Dokumen</h4>
+                            <h4 class="font-semibold text-gray-900 mb-2">Link Dokumen</h4>
                             <ul class="text-sm text-gray-600 space-y-1">
                                 <li><strong>Penyimpanan:</strong> Eksternal / Cloud</li>
                                 <li><strong>URL Asli:</strong> 
                                     @if($journal->document_url)
                                         <a href="{{ $journal->document_url }}" target="_blank" class="text-green-600 hover:underline">Buka Tautan</a>
                                     @else
-                                        <span class="text-gray-400">Belum tersedia</span>
+                                        <span class="text-gray-400">Belum ado</span>
                                     @endif
                                 </li>
                             </ul>
@@ -93,24 +93,24 @@
                                 </button>
                                 <a href="{{ route('journal.download', $journal) }}" 
                                    class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-royal-emerald hover:bg-green-900 text-white font-black rounded-xl transition-all shadow-lg border-2 border-royal-gold">
-                                    <i class="fas fa-download mr-2"></i> UNDUH PDF
+                                    <i class="fas fa-download mr-2"></i> UNDUH / AMBIL PDF
                                 </a>
                             </div>
                             <p class="text-sm text-gray-500 mt-6 font-medium italic">
-                                * Dokumen ini bersifat publik sebagai bagian dari preservasi warisan budaya Lembaga Adat Kota Jambi.
+                                * Dokumen ko sifatnyo untuk umum sebagai bagian njago warisan budayo LAM Kota Jambi.
                             </p>
                         @else
                             @auth
                                 @if(in_array(auth()->user()->role, ['admin', 'dosen_mahasiswa']))
-                                    <h4 class="text-xl font-black text-green-900 mb-6 uppercase tracking-wider">Akses Terbatas</h4>
+                                    <h4 class="text-xl font-black text-green-900 mb-6 uppercase tracking-wider">Akses Terbatas (Khusus)</h4>
                                     <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
                                         <a href="{{ route('journal.download', $journal) }}" 
                                            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3 bg-royal-emerald hover:bg-green-900 text-white font-black rounded-xl transition-all shadow-lg">
-                                            <i class="fas fa-download mr-2"></i> UNDUH DOKUMEN
+                                            <i class="fas fa-download mr-2"></i> UNDUH / AMBIL DOKUMEN
                                         </a>
                                     </div>
                                     <p class="text-sm text-gray-500 mt-6 font-medium">
-                                        Anda memiliki izin untuk mengakses dokumen terbatas ini.
+                                        Kito ado izin untuk nengok dokumen terbatas ko.
                                     </p>
                                 @else
                                     <div class="text-center bg-yellow-50 border-2 border-yellow-200 rounded-2xl p-8">
@@ -118,7 +118,7 @@
                                             <i class="fas fa-lock text-2xl"></i>
                                         </div>
                                         <p class="text-yellow-900 font-bold mb-4">
-                                            Akses Terbatas: Anda perlu login sebagai Pengurus Adat atau Anggota untuk mengunduh dokumen ini.
+                                            Akses Terbatas: Kito harus login sebagai Pengurus Adat atau Anggota untuk ngunduh dokumen ko.
                                         </p>
                                         <a href="{{ route('profile.edit') }}" class="px-6 py-2 bg-royal-emerald text-white font-black rounded-lg text-xs uppercase tracking-widest hover:bg-green-800 transition">Hubungi Admin</a>
                                     </div>
@@ -129,10 +129,10 @@
                                         <i class="fas fa-lock text-2xl"></i>
                                     </div>
                                     <p class="text-yellow-900 font-bold mb-4">
-                                        Dokumen ini dilindungi. Silakan login untuk mendapatkan akses unduhan.
+                                        Dokumen ko dilindungi. Sila login dulu biar biso ngunduh.
                                     </p>
                                     <a href="{{ route('login') }}" class="px-8 py-3 bg-royal-emerald text-white font-black rounded-xl hover:bg-green-900 transition-all shadow-lg inline-flex items-center">
-                                        <i class="fas fa-sign-in-alt mr-2"></i> LOGIN SEKARANG
+                                        <i class="fas fa-sign-in-alt mr-2"></i> MASUK SEKARANG
                                     </a>
                                 </div>
                             @endauth
@@ -171,7 +171,7 @@
                                     <div class="w-12 h-12 bg-gray-50 rounded-full flex items-center justify-center mx-auto mb-3">
                                         <i class="fas fa-folder-open text-gray-300 text-xl"></i>
                                     </div>
-                                    <p class="text-sm text-gray-500">Belum ada dokumen terkait.</p>
+                                    <p class="text-sm text-gray-500">Belum ado dokumen terkait.</p>
                                 </div>
                             @endif
                         </div>

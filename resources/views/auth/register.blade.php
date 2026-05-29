@@ -4,7 +4,7 @@
             <div class="text-center mb-8">
                 <img src="{{ asset('logo.png') }}" alt="Logo" class="w-24 h-24 object-contain mx-auto mb-4 drop-shadow-md">
                 <h2 class="text-3xl font-bold text-lam-green mb-2">Daftar Akun Baru</h2>
-                <p class="text-gray-600 font-medium">Buat akun baru untuk mengakses Library Digital Lembaga Adat Kota Jambi</p>
+                <p class="text-gray-600 font-medium">Buat akun baru untuk mengakses Serambi Baco LAM Kota Jambi</p>
             </div>
 
             <form method="POST" action="{{ route('register') }}" class="space-y-6">
@@ -26,7 +26,7 @@
                                required 
                                autofocus 
                                autocomplete="name"
-                               placeholder="Masukkan nama lengkap Anda..."
+                               placeholder="Masukkan nama lengkap kito..."
                                class="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                             <i class="fas fa-user text-lam-green"></i>
@@ -50,7 +50,7 @@
                                value="{{ old('email') }}" 
                                required 
                                autocomplete="username"
-                               placeholder="Masukkan email Anda..."
+                               placeholder="Masukkan email kito..."
                                class="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                             <i class="fas fa-envelope text-lam-green"></i>
@@ -73,7 +73,7 @@
                                name="password" 
                                required 
                                autocomplete="new-password"
-                               placeholder="Masukkan password Anda..."
+                               placeholder="Masukkan password kito..."
                                class="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                             <i class="fas fa-lock text-lam-green"></i>
@@ -96,7 +96,7 @@
                                name="password_confirmation" 
                                required 
                                autocomplete="new-password"
-                               placeholder="Konfirmasi password Anda..."
+                               placeholder="Konfirmasi password kito..."
                                class="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
                             <i class="fas fa-lock text-lam-green"></i>
@@ -115,7 +115,7 @@
 
             <div class="mt-8 text-center">
                 <p class="text-gray-600 font-semibold">
-                    Sudah punya akun? 
+                    Sudah ado akun? 
                     <a href="{{ route('login') }}" class="text-lam-green font-bold hover:underline transition-all">
                         Masuk Sekarang
                     </a>

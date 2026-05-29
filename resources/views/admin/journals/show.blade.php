@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Detail Library Digital') }}
+            {{ __('Detail Serambi Baco') }}
         </h2>
     </x-slot>
 
@@ -60,7 +60,7 @@
                         </div>
 
                         <div class="mb-8">
-                            <h4 class="text-xl font-bold text-gray-900 border-b-2 border-green-100 pb-2 mb-4 inline-block">Kata Kunci</h4>
+                            <h4 class="text-xl font-bold text-gray-900 border-b-2 border-green-100 pb-2 mb-4 inline-block">Kato Kunci</h4>
                             <div class="flex flex-wrap gap-2">
                                 @foreach($journal->keywords_array as $keyword)
                                     <span class="px-4 py-1.5 bg-green-50 text-lam-green rounded-full text-sm font-medium border border-green-100">
@@ -93,8 +93,8 @@
                             <div class="mt-8 p-6 bg-yellow-50 rounded-2xl border border-yellow-200 flex items-start space-x-4">
                                 <i class="fas fa-exclamation-triangle text-yellow-500 text-2xl mt-1"></i>
                                 <div>
-                                    <h5 class="font-bold text-yellow-800">Tidak ada URL Dokumen</h5>
-                                    <p class="text-sm text-yellow-600 mt-1">Jurnal ini belum memiliki tautan ke dokumen cloud.</p>
+                                    <h5 class="font-bold text-yellow-800">Belum Ado URL Dokumen</h5>
+                                    <p class="text-sm text-yellow-600 mt-1">Dokumen ko belum ado link ke cloud.</p>
                                 </div>
                             </div>
                         @endif
@@ -110,7 +110,7 @@
                                     <i class="fas fa-calendar-alt"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Tahun Publikasi</p>
+                                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Tahun Terbit</p>
                                     <p class="text-gray-900 font-medium">{{ $journal->year ?? '-' }}</p>
                                     @if($journal->published_at)
                                         <p class="text-xs text-gray-500 mt-1">({{ \Carbon\Carbon::parse($journal->published_at)->format('d M Y') }})</p>
@@ -134,7 +134,7 @@
                                     <i class="fas fa-history"></i>
                                 </div>
                                 <div>
-                                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Terakhir Diperbarui</p>
+                                    <p class="text-xs text-gray-500 font-bold uppercase tracking-wider mb-1">Terakhir Diubah</p>
                                     <p class="text-gray-900 font-medium">{{ $journal->updated_at->diffForHumans() }}</p>
                                     <p class="text-xs text-gray-500 mt-1">{{ $journal->updated_at->format('d M Y, H:i') }}</p>
                                 </div>
@@ -152,7 +152,7 @@
                         </div>
                         
                         <div class="mt-10 pt-6 border-t border-gray-200">
-                            <form action="{{ route('admin.journals.destroy', $journal) }}" method="POST" onsubmit="return confirm('Apakah Anda yakin ingin menghapus jurnal ini beserta file PDF-nya? Tindakan ini tidak dapat dibatalkan.');">
+                            <form action="{{ route('admin.journals.destroy', $journal) }}" method="POST" onsubmit="return confirm('Kito yakin nak hapus dokumen ko beserto file PDF-nyo? Tindakan ko idak biso dibatalkan.');">
                                 @csrf @method('DELETE')
                                 <button type="submit" class="w-full flex items-center justify-center px-4 py-2 border border-red-200 text-green-600 bg-green-50 hover:bg-green-100 rounded-xl transition-colors font-semibold">
                                     <i class="fas fa-trash-alt mr-2"></i> Hapus Dokumen

@@ -6,8 +6,8 @@
         <div class="p-6 sm:p-10 text-gray-900">
             <div class="text-center mb-8">
                 <img src="{{ asset('logo.png') }}" alt="Logo" class="w-24 h-24 object-contain mx-auto mb-4 drop-shadow-md">
-                <h2 class="text-3xl font-bold text-lam-green mb-1">Masuk ke Digital Library LAM</h2>
-                <p class="text-gray-500 text-sm font-medium">Lembaga Adat Melayu Jambi</p>
+                <h2 class="text-3xl font-bold text-lam-green mb-1">Masuk ke Serambi Baco LAM</h2>
+                <p class="text-gray-500 text-sm font-medium">Lembaga Adat Melayu Kota Jambi</p>
             </div>
 
             <form method="POST" action="{{ route('login') }}" class="space-y-6">
@@ -24,7 +24,7 @@
                                required
                                autofocus
                                autocomplete="username"
-                               placeholder="Masukkan email Anda..."
+                               placeholder="Masukkan email kito..."
                                class="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-lam-green">
                             <i class="fas fa-envelope"></i>
@@ -42,7 +42,7 @@
                                name="password"
                                required
                                autocomplete="current-password"
-                               placeholder="Masukkan password Anda..."
+                               placeholder="Masukkan password kito..."
                                class="w-full px-4 py-3 pl-12 border-2 border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-green-400 focus:border-green-400 transition-all">
                         <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-lam-green">
                             <i class="fas fa-lock"></i>
@@ -55,22 +55,22 @@
                 <div class="flex items-center justify-between">
                     <label for="remember_me" class="flex items-center space-x-2 text-sm text-gray-700">
                         <input id="remember_me" type="checkbox" name="remember" class="w-4 h-4 text-lam-green border-gray-300 rounded focus:ring-lam-green">
-                        <span class="font-medium">Remember me</span>
+                        <span class="font-medium">Ingat sayo</span>
                     </label>
 
                     @if (Route::has('password.request'))
-                        <a href="{{ route('password.request') }}" class="text-sm font-medium text-lam-green hover:text-green-800 transition-colors">Forgot password?</a>
+                        <a href="{{ route('password.request') }}" class="text-sm font-medium text-lam-green hover:text-green-800 transition-colors">Lupo password?</a>
                     @endif
                 </div>
 
                 <div class="flex justify-center pt-6">
-                    <button type="submit" class="w-full px-6 py-3 bg-lam-green text-white rounded-xl font-bold hover:shadow-lg hover:bg-green-800 transition-all duration-200">LOG IN</button>
+                    <button type="submit" class="w-full px-6 py-3 bg-lam-green text-white rounded-xl font-bold hover:shadow-lg hover:bg-green-800 transition-all duration-200">MASUK</button>
                 </div>
             </form>
 
             <div class="mt-8 text-center">
                 <p class="text-gray-600 font-semibold">
-                    Belum punya akun? 
+                    Belum ado akun? 
                     <a href="{{ route('register') }}" class="text-lam-green font-bold hover:underline transition-all">
                         Daftar Sekarang
                     </a>

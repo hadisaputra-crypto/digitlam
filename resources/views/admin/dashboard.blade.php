@@ -14,8 +14,8 @@
                         <i class="fas fa-user-shield text-2xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-lam-green">Selamat Datang, Administrator {{ Auth::user()->name }}!</h3>
-                        <p class="text-gray-600 mt-1">Kelola sistem Library Digital Lembaga Adat Kota Jambi, pengguna, dan konten dari panel ini.</p>
+                        <h3 class="text-2xl font-bold text-lam-green">Selamo Datang, Administrator {{ Auth::user()->name }}!</h3>
+                        <p class="text-gray-600 mt-1">Kelola sistem Serambi Baco LAM Kota Jambi, pengguna, dan konten dari panel siko.</p>
                     </div>
                 </div>
             </div>
@@ -30,8 +30,8 @@
                             </div>
                         </div>
                         <div class="sm:ml-5 w-full">
-                            <dt class="text-sm font-medium text-gray-700">Kelola Library Digital</dt>
-                            <dd class="text-xs text-gray-500">Lihat, edit, hapus jurnal</dd>
+                            <dt class="text-sm font-medium text-gray-700">Kelola Serambi Baco</dt>
+                            <dd class="text-xs text-gray-500">Tengok, edit, hapus dokumen</dd>
                         </div>
                     </div>
                 </a>
@@ -44,8 +44,8 @@
                             </div>
                         </div>
                         <div class="sm:ml-5 w-full">
-                            <dt class="text-sm font-medium text-gray-700">Kelola User</dt>
-                            <dd class="text-xs text-gray-500">Lihat, edit, hapus user</dd>
+                            <dt class="text-sm font-medium text-gray-700">Kelola Pengguno</dt>
+                            <dd class="text-xs text-gray-500">Tengok, edit, hapus pengguno</dd>
                         </div>
                     </div>
                 </a>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="sm:ml-5 w-full">
                             <dt class="text-sm font-medium text-gray-700">Kelola Kategori</dt>
-                            <dd class="text-xs text-gray-500">Lihat, edit, hapus kategori</dd>
+                            <dd class="text-xs text-gray-500">Tengok, edit, hapus kategori</dd>
                         </div>
                     </div>
                 </a>
@@ -72,8 +72,8 @@
                             </div>
                         </div>
                         <div class="sm:ml-5 w-full">
-                            <dt class="text-sm font-medium text-gray-700">Activity Logs</dt>
-                            <dd class="text-xs text-gray-500">Lihat aktivitas sistem</dd>
+                            <dt class="text-sm font-medium text-gray-700">Log Aktivitas</dt>
+                            <dd class="text-xs text-gray-500">Tengok aktivitas sistem</dd>
                         </div>
                     </div>
                 </a>
@@ -91,7 +91,7 @@
                             </div>
                             <div class="ml-5 w-0 flex-1">
                                 <dl>
-                                    <dt class="text-sm font-medium text-gray-500 truncate">Total Koleksi Digital</dt>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Segalo Koleksi Digital</dt>
                                     <dd class="text-lg font-medium text-gray-900">{{ $stats['total_journals'] }}</dd>
                                 </dl>
                             </div>
@@ -109,7 +109,7 @@
                             </div>
                             <div class="ml-5 w-0 flex-1">
                                 <dl>
-                                    <dt class="text-sm font-medium text-gray-500 truncate">Jurnal Terbit</dt>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Dokumen Lah Terbit</dt>
                                     <dd class="text-lg font-medium text-gray-900">{{ $stats['published_journals'] }}</dd>
                                 </dl>
                             </div>
@@ -127,7 +127,7 @@
                             </div>
                             <div class="ml-5 w-0 flex-1">
                                 <dl>
-                                    <dt class="text-sm font-medium text-gray-500 truncate">Draft Jurnal</dt>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Draft Dokumen</dt>
                                     <dd class="text-lg font-medium text-gray-900">{{ $stats['draft_journals'] }}</dd>
                                 </dl>
                             </div>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="ml-5 w-0 flex-1">
                                 <dl>
-                                    <dt class="text-sm font-medium text-gray-500 truncate">Total Pengguna</dt>
+                                    <dt class="text-sm font-medium text-gray-500 truncate">Segalo Pengguno</dt>
                                     <dd class="text-lg font-medium text-gray-900">{{ $stats['total_users'] }}</dd>
                                 </dl>
                             </div>
@@ -159,7 +159,7 @@
                 <!-- Journals per Category Chart -->
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6">
-                        <h3 class="text-lg font-medium text-gray-900 mb-4">Jurnal per Kategori</h3>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Dokumen per Kategori</h3>
                         <div style="height: 250px; position: relative;">
                             <canvas id="categoryChart"></canvas>
                         </div>
@@ -169,7 +169,7 @@
                 <!-- Journals per Year Chart -->
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6">
-                        <h3 class="text-lg font-medium text-gray-900 mb-4">Jurnal per Tahun</h3>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Dokumen per Tahun</h3>
                         <div style="height: 250px; position: relative;">
                             <canvas id="yearChart"></canvas>
                         </div>
@@ -182,7 +182,7 @@
                 <!-- Recent Activity -->
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6">
-                        <h3 class="text-lg font-medium text-gray-900 mb-4">Aktivitas Terbaru</h3>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Aktivitas Paling Baru</h3>
                         <div class="space-y-4">
                             @forelse($recentActivities as $activity)
                                 <div class="flex items-start space-x-3">
@@ -198,7 +198,7 @@
                                     </div>
                                 </div>
                             @empty
-                                <p class="text-gray-500 text-sm">Tidak ada aktivitas terbaru</p>
+                                <p class="text-gray-500 text-sm">Belum ado aktivitas terbaru</p>
                             @endforelse
                         </div>
                     </div>
@@ -207,7 +207,7 @@
                 <!-- Recent Journals -->
                 <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                     <div class="p-6">
-                        <h3 class="text-lg font-medium text-gray-900 mb-4">Jurnal Terbaru</h3>
+                        <h3 class="text-lg font-medium text-gray-900 mb-4">Dokumen Paling Baru</h3>
                         <div class="space-y-4">
                             @forelse($recentJournals as $journal)
                                 <div class="flex items-start space-x-3">
@@ -227,7 +227,7 @@
                                     </div>
                                 </div>
                             @empty
-                                <p class="text-gray-500 text-sm">Tidak ada jurnal terbaru</p>
+                                <p class="text-gray-500 text-sm">Belum ado dokumen terbaru</p>
                             @endforelse
                         </div>
                     </div>
@@ -279,7 +279,7 @@
             data: {
                 labels: {!! json_encode($journalsPerYear->pluck('year')) !!},
                 datasets: [{
-                    label: 'Jumlah Jurnal',
+                    label: 'Jumlah Dokumen',
                     data: {!! json_encode($journalsPerYear->pluck('count')) !!},
                     backgroundColor: [
                         '#a81818',

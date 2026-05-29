@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Kelola Library Digital') }}
+            {{ __('Kelola Serambi Baco') }}
         </h2>
     </x-slot>
 
@@ -18,12 +18,12 @@
                             <i class="fas fa-book-open"></i> Daftar Koleksi Adat
                         </h3>
                         <p class="text-green-100 max-w-xl text-lg">
-                            Kelola semua publikasi jurnal yang tersedia di repositori.
+                            Kelola segalo publikasi dokumen adat yang ado di repositori kito.
                         </p>
                     </div>
                     <div>
                         <a href="{{ route('admin.journals.create') }}" class="inline-flex items-center px-6 py-3 bg-white text-lam-green font-bold rounded-xl shadow-lg hover:bg-yellow-50 hover:scale-105 transition-all duration-300">
-                            <i class="fas fa-plus-circle mr-2"></i> Buat Jurnal Baru
+                            <i class="fas fa-plus-circle mr-2"></i> Buat Dokumen Baru
                         </a>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
                                                 <a href="{{ route('admin.journals.edit', $journal) }}" class="p-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 hover:text-blue-800 transition-colors shadow-sm" title="Edit">
                                                     <i class="fas fa-edit"></i>
                                                 </a>
-                                                <form action="{{ route('admin.journals.destroy', $journal) }}" method="POST" class="inline-block" onsubmit="return confirm('Apakah Anda yakin ingin menghapus jurnal ini?');">
+                                                <form action="{{ route('admin.journals.destroy', $journal) }}" method="POST" class="inline-block" onsubmit="return confirm('Kito yakin nak hapus dokumen ko?');">
                                                     @csrf @method('DELETE')
                                                     <button type="submit" class="p-2 bg-green-50 text-green-600 rounded-lg hover:bg-green-100 hover:text-green-800 transition-colors shadow-sm" title="Hapus">
                                                         <i class="fas fa-trash-alt"></i>
@@ -116,8 +116,8 @@
                                         <td colspan="5" class="px-6 py-12 text-center">
                                             <div class="flex flex-col items-center justify-center text-gray-400">
                                                 <i class="far fa-folder-open text-5xl mb-4"></i>
-                                                <p class="text-lg font-medium">Belum ada jurnal yang tersedia.</p>
-                                                <a href="{{ route('admin.journals.create') }}" class="mt-2 text-lam-green hover:underline font-medium">Buat jurnal pertama</a>
+                                                <p class="text-lg font-medium">Belum ado dokumen adat yang tersedio.</p>
+                                                <a href="{{ route('admin.journals.create') }}" class="mt-2 text-lam-green hover:underline font-medium">Buat dokumen pertama kito</a>
                                             </div>
                                         </td>
                                     </tr>

@@ -13,18 +13,18 @@
         <!-- Scripts -->
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
-    <body class="antialiased font-sans text-gray-900 bg-gray-50">
+    <body class="antialiased font-sans text-gray-900 bg-batik">
         @include('layouts.navigation')
 
         <main class="py-20">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="max-w-4xl mx-auto mb-16">
-                    <h1 class="text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight">Akses Library Digital Lembaga Adat Tanpa Batas</h1>
-                    <p class="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">Platform terintegrasi untuk publikasi, pencarian, dan pengelolaan dokumen adat dengan keamanan tingkat tinggi dan teknologi terkini.</p>
+                    <h1 class="text-5xl md:text-6xl font-black bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6 leading-tight">Akses Serambi Baco LAM Kota Jambi Tanpa Batas</h1>
+                    <p class="text-lg md:text-xl text-gray-600 font-medium leading-relaxed">Wadah terintegrasi untuk nyebarkan, nyari, dan ngelola dokumen adat dengan keamanan tingkat tinggi dan teknologi paling baru.</p>
 
                     <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
                         <a href="{{ route('home') }}" class="w-full sm:w-auto px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white rounded-xl font-bold hover:shadow-xl hover:-translate-y-1 transition-all duration-200 inline-flex items-center gap-2 justify-center"> 
-                            <i class="fas fa-search"></i> Mulai Pencarian
+                            <i class="fas fa-search"></i> Mulai Nyari
                         </a>
                         <a href="#features" class="w-full sm:w-auto px-8 py-4 border-2 border-blue-600 text-green-600 rounded-xl font-bold hover:bg-green-50 transition-all duration-200 inline-flex items-center gap-2 justify-center"> 
                             <i class="fas fa-info-circle"></i> Pelajari Lebih Lanjut
@@ -38,16 +38,16 @@
                         <div class="w-20 h-20 bg-royal-emerald rounded-2xl flex items-center justify-center text-royal-gold mb-8 mx-auto shadow-xl">
                             <i class="fas fa-search text-3xl"></i>
                         </div>
-                        <h3 class="font-black text-2xl text-gray-900 mb-4">Pencarian Cerdas</h3>
-                        <p class="text-gray-600 leading-relaxed">Filter kategori, kata kunci, dan arsip untuk menemukan dokumen adat yang paling relevan dengan kebutuhan Anda.</p>
+                        <h3 class="font-black text-2xl text-gray-900 mb-4">Nyari Cerdas</h3>
+                        <p class="text-gray-600 leading-relaxed">Filter kategori, kato kunci, dan arsip biar biso nemuin dokumen adat yang kito butuhkan.</p>
                     </div>
 
                     <div class="bg-white p-10 text-center rounded-3xl shadow-xl border-t-4 border-royal-gold hover:shadow-2xl transition-all duration-300">
                         <div class="w-20 h-20 bg-royal-emerald rounded-2xl flex items-center justify-center text-royal-gold mb-8 mx-auto shadow-xl">
                             <i class="fas fa-shield-alt text-3xl"></i>
                         </div>
-                        <h3 class="font-black text-2xl text-gray-900 mb-4">Keamanan Terjamin</h3>
-                        <p class="text-gray-600 leading-relaxed">Enkripsi dan kontrol akses untuk melindungi konten dokumen adat dengan standar keamanan tinggi.</p>
+                        <h3 class="font-black text-2xl text-gray-900 mb-4">Keamanan Terjago</h3>
+                        <p class="text-gray-600 leading-relaxed">Enkripsi dan kontrol akses biar njago isi dokumen adat dengan standar keamanan tinggi.</p>
                     </div>
 
                     <div class="bg-white p-10 text-center rounded-3xl shadow-xl border-t-4 border-royal-gold hover:shadow-2xl transition-all duration-300">
@@ -55,7 +55,7 @@
                             <i class="fas fa-bolt text-3xl"></i>
                         </div>
                         <h3 class="font-black text-2xl text-gray-900 mb-4">Akses Cepat</h3>
-                        <p class="text-gray-600 leading-relaxed">Infrastruktur yang dioptimalkan untuk akses cepat dan pengalaman pengguna yang lancar tanpa gangguan.</p>
+                        <p class="text-gray-600 leading-relaxed">Infrastruktur elok untuk akses cepat dan kito biso nengok dengan lancar tanpa gangguan.</p>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
 
         <footer class="border-t border-gray-200 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 text-center text-sm text-gray-600 font-medium">
-                &copy; {{ date('Y') }} Library Digital Lembaga Adat Kota Jambi. All rights reserved.
+                &copy; {{ date('Y') }} Serambi Baco LAM Kota Jambi. All rights reserved.
             </div>
         </footer>
     </body>

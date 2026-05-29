@@ -2,9 +2,9 @@
     <div class="bg-gray-50 min-h-screen py-12">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
-                <h1 class="text-3xl font-bold text-gray-900 mb-4">Koleksi Kategori</h1>
+                <h1 class="text-3xl font-bold text-gray-900 mb-4">Segalo Kategori</h1>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                    Jelajahi berbagai koleksi dokumen dan jurnal berdasarkan kategori yang tersedia di Perpustakaan Digital Lembaga Adat Melayu Jambi.
+                    Tengok segalo macem koleksi dokumen dan surat adat berdasarkan kategori yang ado di Serambi Baco LAM Kota Jambi.
                 </p>
             </div>
 
@@ -18,7 +18,7 @@
                                 </div>
                                 <div class="flex-1">
                                     <h3 class="text-lg font-bold text-gray-900 mb-1 group-hover:text-lam-green transition">{{ $category->name }}</h3>
-                                    <p class="text-gray-500 text-sm mb-3 line-clamp-2">{{ $category->description ?? 'Tidak ada deskripsi untuk kategori ini.' }}</p>
+                                    <p class="text-gray-500 text-sm mb-3 line-clamp-2">{{ $category->description ?? 'Belum ado penjelasan untuk kategori siko.' }}</p>
                                     <div class="flex items-center text-sm font-medium text-gray-400">
                                         <i class="fas fa-file-alt mr-2"></i>
                                         <span>{{ $category->journals_count }} Dokumen</span>
@@ -38,8 +38,8 @@
                     <div class="w-16 h-16 bg-gray-100 rounded-full flex items-center justify-center text-gray-400 mx-auto mb-4">
                         <i class="fas fa-folder-open text-2xl"></i>
                     </div>
-                    <h3 class="text-lg font-medium text-gray-900">Belum ada kategori</h3>
-                    <p class="text-gray-500 mt-2">Kategori dokumen belum ditambahkan.</p>
+                    <h3 class="text-lg font-medium text-gray-900">Belum ado kategori</h3>
+                    <p class="text-gray-500 mt-2">Kategori dokumen belum dimasukkan.</p>
                 </div>
             @endif
         </div>

@@ -19,8 +19,8 @@
                         <i class="fas fa-user-astronaut text-2xl"></i>
                     </div>
                     <div>
-                        <h3 class="text-2xl font-bold text-lam-green">Selamat Datang, {{ Auth::user()->name }}!</h3>
-                        <p class="text-gray-600 mt-1">{{ __("You're logged in!") }} Akses semua fitur Library Digital Lembaga Adat Kota Jambi dari sini.</p>
+                        <h3 class="text-2xl font-bold text-lam-green">Selamo Datang, {{ Auth::user()->name }}!</h3>
+                        <p class="text-gray-600 mt-1">{{ __("Kito lah masuk!") }} Akses segalo fitur Serambi Baco LAM Kota Jambi dari siko.</p>
                     </div>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                             <h4 class="text-lg font-bold text-gray-900">Upload Dokumen Adat</h4>
                         </div>
                     </div>
-                    <p class="text-gray-600 text-sm">Unggah jurnal baru Anda untuk dipublikasikan ke repository dengan mudah.</p>
+                    <p class="text-gray-600 text-sm">Unggah dokumen/surat adat baru kito biar biso dimasukkan ke repositori dengan mudah.</p>
                 </a>
 
                 <!-- Profile -->
@@ -46,7 +46,7 @@
                             <h4 class="text-lg font-bold text-gray-900">Pengaturan Profil</h4>
                         </div>
                     </div>
-                    <p class="text-sm text-gray-600">Perbarui informasi profil dan keamanan akun Anda.</p>
+                    <p class="text-sm text-gray-600">Ubah informasi profil dan keamanan akun kito.</p>
                 </a>
             </div>
         </div>

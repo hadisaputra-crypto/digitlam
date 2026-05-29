@@ -8,8 +8,8 @@
                     <a href="{{ route('home') }}" class="logo-link flex items-center hover:opacity-80 transition">
                         <img src="{{ asset('logo.png') }}" alt="Logo" class="w-10 h-10 object-contain bg-white rounded-full p-1 shadow-md">
                         <div class="flex flex-col ms-3">
-                            <span class="text-white text-lg font-bold">Library Digital</span>
-                            <span class="text-white/80 text-xs font-semibold">Lembaga Adat Kota Jambi</span>
+                            <span class="text-white text-lg font-bold">Serambi Baco</span>
+                            <span class="text-white/80 text-xs font-semibold">LAM Kota Jambi</span>
                         </div>
                     </a>
                 </div>
@@ -33,7 +33,7 @@
                             <a href="{{ route('admin.dashboard') }}" class="px-3 py-2 rounded-lg text-sm font-semibold {{ request()->routeIs('admin.dashboard') ? 'bg-white/10 text-white' : 'text-white/80 hover:bg-white/10 hover:text-white' }} transition-all duration-200" title="Dashboard Admin">
                                 <i class="fas fa-tachometer-alt"></i>
                             </a>
-                            <a href="{{ route('admin.journals.index') }}" class="px-3 py-2 rounded-lg text-sm font-semibold {{ request()->routeIs('admin.journals.*') ? 'bg-white/10 text-white' : 'text-white/80 hover:bg-white/10 hover:text-white' }} transition-all duration-200">{{ __('Library Digital') }}</a>
+                            <a href="{{ route('admin.journals.index') }}" class="px-3 py-2 rounded-lg text-sm font-semibold {{ request()->routeIs('admin.journals.*') ? 'bg-white/10 text-white' : 'text-white/80 hover:bg-white/10 hover:text-white' }} transition-all duration-200">{{ __('Serambi Baco') }}</a>
                             <a href="{{ route('admin.users.index') }}" class="px-3 py-2 rounded-lg text-sm font-semibold {{ request()->routeIs('admin.users.*') ? 'bg-white/10 text-white' : 'text-white/80 hover:bg-white/10 hover:text-white' }} transition-all duration-200">{{ __('User') }}</a>
                             <a href="{{ route('admin.categories.index') }}" class="px-3 py-2 rounded-lg text-sm font-semibold {{ request()->routeIs('admin.categories.*') ? 'bg-white/10 text-white' : 'text-white/80 hover:bg-white/10 hover:text-white' }} transition-all duration-200">{{ __('Kategori') }}</a>
                             <a href="{{ route('admin.logs') }}" class="px-3 py-2 rounded-lg text-sm font-semibold {{ request()->routeIs('admin.logs') ? 'bg-white/10 text-white' : 'text-white/80 hover:bg-white/10 hover:text-white' }} transition-all duration-200">{{ __('Logs') }}</a>
@@ -55,11 +55,6 @@
                         @csrf
                         <button type="submit" class="px-4 py-2 bg-white text-lam-green rounded-lg text-sm font-semibold hover:bg-lam-yellow transition-all duration-200">Logout</button>
                     </form>
-                </div>
-            @else
-                <div class="hidden sm:flex sm:items-center sm:ms-6 space-x-3">
-                    <a href="{{ route('login') }}" class="px-4 py-2 text-sm font-semibold text-white/90 hover:text-white hover:bg-white/10 rounded-lg transition-all duration-200">Login</a>
-                    <a href="{{ route('register') }}" class="px-4 py-2 bg-white text-lam-green rounded-lg text-sm font-semibold hover:bg-lam-yellow transition-all duration-200">Register</a>
                 </div>
             @endauth
 
@@ -84,7 +79,7 @@
                 <div class="border-l-4 border-lam-green pl-2 ml-1 mt-2 mb-2 space-y-1">
                     <div class="text-xs font-semibold text-gray-400 uppercase tracking-wider ml-2 mb-1">Menu Admin</div>
                     <a href="{{ route('admin.dashboard') }}" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 hover:text-lam-green transition-colors duration-150 {{ request()->routeIs('admin.dashboard') ? 'font-bold text-lam-green bg-green-50' : '' }}">{{ __('Dashboard') }}</a>
-                    <a href="{{ route('admin.journals.index') }}" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 hover:text-lam-green transition-colors duration-150 {{ request()->routeIs('admin.journals.*') ? 'font-bold text-lam-green bg-green-50' : '' }}">{{ __('Kelola Library Digital') }}</a>
+                    <a href="{{ route('admin.journals.index') }}" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 hover:text-lam-green transition-colors duration-150 {{ request()->routeIs('admin.journals.*') ? 'font-bold text-lam-green bg-green-50' : '' }}">{{ __('Kelola Serambi Baco') }}</a>
                     <a href="{{ route('admin.users.index') }}" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 hover:text-lam-green transition-colors duration-150 {{ request()->routeIs('admin.users.*') ? 'font-bold text-lam-green bg-green-50' : '' }}">{{ __('Kelola User') }}</a>
                     <a href="{{ route('admin.categories.index') }}" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 hover:text-lam-green transition-colors duration-150 {{ request()->routeIs('admin.categories.*') ? 'font-bold text-lam-green bg-green-50' : '' }}">{{ __('Kelola Kategori') }}</a>
                     <a href="{{ route('admin.logs') }}" class="block px-3 py-2 rounded-md text-gray-700 hover:bg-green-50 hover:text-lam-green transition-colors duration-150 {{ request()->routeIs('admin.logs') ? 'font-bold text-lam-green bg-green-50' : '' }}">{{ __('Activity Logs') }}</a>
@@ -108,13 +103,6 @@
                         @csrf 
                         <button type="submit" class="w-full text-left mt-2 px-3 py-2 rounded-md text-green-600 hover:bg-green-50 font-medium">Log Out</button>
                     </form>
-                </div>
-            </div>
-        @else
-            <div class="pt-4 pb-1 border-t border-gray-100 mt-3">
-                <div class="space-y-2">
-                    <a href="{{ route('login') }}" class="block text-center text-gray-700 px-3 py-2 rounded-md hover:bg-gray-50">Login</a>
-                    <a href="{{ route('register') }}" class="block bg-lam-green text-white text-center px-3 py-2 rounded-md hover:bg-green-800 transition">Register</a>
                 </div>
             </div>
         @endauth

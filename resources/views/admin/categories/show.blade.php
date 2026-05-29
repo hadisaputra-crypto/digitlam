@@ -45,7 +45,7 @@
                     </div>
 
                     <h4 class="text-lg font-bold text-gray-800 border-b pb-2 mb-4 flex items-center justify-between">
-                        <span>Jurnal dalam Kategori ini ({{ $category->journals->count() }})</span>
+                        <span>Dokumen dalam Kategori ko ({{ $category->journals->count() }})</span>
                     </h4>
 
                     @if($category->journals->count() > 0)
@@ -88,7 +88,7 @@
                     @else
                         <div class="bg-gray-50 rounded-xl p-8 text-center border border-dashed border-gray-300">
                             <i class="fas fa-folder-open text-gray-400 text-4xl mb-3"></i>
-                            <p class="text-gray-500 text-lg">Belum ada jurnal dalam kategori ini.</p>
+                            <p class="text-gray-500 text-lg">Belum ado dokumen adat dalam kategori ko.</p>
                         </div>
                     @endif
                 </div>
